@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calc-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Calc" customModule="Calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hM-KF-n2E">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="256"/>
+                                <color key="backgroundColor" red="0.17892413309297087" green="0.17845565894523638" blue="0.18663873540812181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="200"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FKW-p7-zga">
+                                <rect key="frame" x="0.0" y="279.66666666666669" width="414" height="582.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="whM-dv-Cpk">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112.33333333333333"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-NF-0bv" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.19435410903094835" green="0.20337351560657227" blue="0.21881349861979704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtO-H1-t74"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-px-QXT" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="100" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.19710597399999999" green="0.2046859264" blue="0.2188762128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="_">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwC-eL-rep"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhg-VK-cba" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="99.666666666666657" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.19710597399999999" green="0.2046859264" blue="0.2188762128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thW-vP-QhS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-ov-U7R" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="99.666666666666686" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="1" green="0.32962433489376841" blue="0.16938158509901435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="/">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coP-nr-hkd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.32962433489376841" blue="0.16938158509901435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="a3A-iG-XLZ">
+                                        <rect key="frame" x="0.0" y="117.33333333333331" width="414" height="112.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-as-EnL" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teh-at-AiN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv3-EM-Ato" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="100" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ogs-7E-JcJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuq-1w-nW2" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="99.666666666666657" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsm-9h-W1i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8e-58-NOB" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="99.666666666666686" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="1" green="0.32962433489999998" blue="0.16938158510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RHD-fd-p2I"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9e1-c8-TP4">
+                                        <rect key="frame" x="0.0" y="234.99999999999997" width="414" height="112.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OS-8h-0GV" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6P-rd-Ol7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPD-Ap-cE5" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="100" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLq-aS-BGV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCs-rv-3j6" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="99.666666666666657" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGn-SP-cRx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFc-5r-mXS" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="99.666666666666686" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="1" green="0.32962433489999998" blue="0.16938158510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83N-0T-SRi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-2d-Zii">
+                                        <rect key="frame" x="0.0" y="352.33333333333331" width="414" height="112.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh3-ST-nsk" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNI-aD-xoR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a16-Vu-Zt4" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="104.66666666666669" y="0.0" width="100" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlN-uC-snG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-Tn-C2k" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="99.666666666666657" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Zo-Fx-1CZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOe-9y-gjL" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="99.666666666666686" height="112.66666666666667"/>
+                                                <color key="backgroundColor" red="1" green="0.32962433489999998" blue="0.16938158510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EnS-Rd-FEd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-Cd-Tw5">
+                                        <rect key="frame" x="0.0" y="469.99999999999994" width="414" height="112.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb7-lf-7tT" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="204.66666666666666" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4f-sY-Dan"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0I-an-Huv" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="209.66666666666663" y="0.0" width="99.666666666666657" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="teI-44-QcJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-Q3-guy" customClass="bottom" customModule="Calc" customModuleProvider="target">
+                                                <rect key="frame" x="314.33333333333331" y="0.0" width="99.666666666666686" height="112.33333333333333"/>
+                                                <color key="backgroundColor" red="1" green="0.32962433489999998" blue="0.16938158510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLD-mI-DOK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zPk-Q3-guy" firstAttribute="width" secondItem="WOe-9y-gjL" secondAttribute="width" id="6SW-vn-Ekw"/>
+                                    <constraint firstItem="c0I-an-Huv" firstAttribute="width" secondItem="WOe-9y-gjL" secondAttribute="width" id="vbQ-Y0-d4y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1801889539" green="0.18090975279999999" blue="0.18792089819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FKW-p7-zga" secondAttribute="trailing" id="8ni-tf-yL5"/>
+                            <constraint firstItem="FKW-p7-zga" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="O20-pb-jgK"/>
+                            <constraint firstItem="5hM-KF-n2E" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3.5" id="QId-7n-YTd"/>
+                            <constraint firstItem="FKW-p7-zga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UDz-0d-icf"/>
+                            <constraint firstItem="5hM-KF-n2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aK2-dr-P85"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5hM-KF-n2E" secondAttribute="trailing" constant="20" id="bYI-K6-btO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FKW-p7-zga" secondAttribute="bottom" id="g3b-px-ubt"/>
+                            <constraint firstItem="5hM-KF-n2E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q60-bj-yOg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLBL" destination="5hM-KF-n2E" id="D5A-Pi-IZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>
